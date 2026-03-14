@@ -10,8 +10,6 @@ const monaSans = Mona_Sans({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "PrepWise",
   description: "An AI Powered Mock Interview Platform",
@@ -23,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("dark", "font-sans", geist.variable)}>
+    <html lang="en" className={cn("dark", monaSans.variable, "font-sans", geist.variable)}>
       <body
-        className={`${monaSans.className} antialiased`}
+        className={`${monaSans.className} antialiased pattern`}
       >
         {children}
       </body>
