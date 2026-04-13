@@ -68,7 +68,7 @@ const Feedback = async ({ params }: RouteParams) => {
                     ([name, score], index) => (
                         <div key={index}>
                             <p className="font-bold">
-                                {index + 1}. {name} ({score}/100)
+                                {index + 1}. {name} ({score}/10)
                             </p>
                         </div>
                     )
